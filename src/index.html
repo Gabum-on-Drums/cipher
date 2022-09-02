@@ -1,14 +1,34 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cifrador cesar</title>
+  <link href="style.css" rel="stylesheet" />
+  <script src="index.js" type="module"></script>
+</head>
+<body>
+  <main>
+     <h1>CIFRADOR CESAR</h1>
+      <h2>instrucciones</h2>
+       <ol>
+        <li>Escribe lo que quieras cifrar en el cuadro izquierdo</li>
+        <li>Elije el valor con que cifrarás hacia arriba y hacia abajo</li>
+        <li>Haz click en cifrar y el resultado se mostrará en el cuadro derecho</li>
+        <li>Para descifrar pega el texto cifrado en el cuadro izquierdo y da click en descifrar</li>
+       </ol>   
+    <!-- <form id="cifrador" autocomplete="off"> -->
+      <div>  
+        <button id="botonCifrador" class="boton1">Cifrar</button>
+        <label>Ingresa el valor</label> 
+        <input id="rango" class="rango" type="number" value="1" min="1" max="20"/>
+        <button id="botonDescifrador" class="boton2">Descifrar</button>
+      </div>
+       <div>
+        <textarea id="inputOriginal" placeholder="Escribe aquí pom! ..." tipe="text" name="text"></textarea>
+        <textarea id="resultado" placeholder="Resultado" tipe="text" name="text"></textarea>
+       </div>
+  </main>
+</body>
 </html>
